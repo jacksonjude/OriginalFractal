@@ -9,7 +9,7 @@ int sizeToDraw = 100;
 public void draw()
 {
   background(sizeToDraw-width/2, 200, 255);
-  colorMode(HSB, width/2);
+  //colorMode(HSB, width/2);
   sizeToDraw++;
   fractal(0, 0, sizeToDraw);
   if (sizeToDraw == width)
