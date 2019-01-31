@@ -1,7 +1,7 @@
 public void setup()
 {
   size(500, 500);
-  frameRate(20);
+  frameRate(60);
 }
 
 int sizeToDraw = 100;
@@ -23,6 +23,11 @@ public void draw()
 public void fractal(int x, int y, int size)
 {
   //fill(size, 200, 255);
+  //pushMatrix();
+  //translate(x, y, 0);
+  //rotateY(0.5);
+  //box(size, size, 1);
+  //popMatrix();
   rect(x, y, size, size);
   if (size < 5) return;
   fractal(x, y, size/2);
